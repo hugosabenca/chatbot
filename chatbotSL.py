@@ -63,7 +63,7 @@ def buscar_prazo_streamlit(numero_pedido, caminho_planilha):
                     respostas_encontradas.append(texto_formatado)
         
         if not respostas_encontradas:
-            return (f"❌ **Pedido `{numero_pedido}` não encontrado.**\n\nVerifique o número digitado ou se o pedido já foi programado.")
+            return (f"❌ **Pedido `{numero_pedido}` não encontrado.**\n\nTalvez já foi produzido ou ainda não foi programado.")
         
         if len(respostas_encontradas) == 1:
             return f"#### ➡️ Pedido `{str(numero_pedido).strip()}`\n\n---\n\n{respostas_encontradas[0]}"
