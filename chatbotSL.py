@@ -56,7 +56,7 @@ if APP_ATIVO:
                         )
                         respostas_encontradas.append(texto_formatado)
             if not respostas_encontradas:
-                return (f"❌ **Pedido `{numero_pedido}` não encontrado.**\n\nTalvez já foi produzido ou ainda não foi programado.")
+                return (f"❌ **Pedido `{numero_pedido}` não encontrado.**\n\nTalvez já tenha sido produzido ou ainda não foi programado. Qualquer coisa me envie um e-mail que verifico pra você.")
             if len(respostas_encontradas) == 1:
                 return f"#### ➡️ Pedido `{str(numero_pedido).strip()}`\n\n---\n\n{respostas_encontradas[0]}"
             cabecalho = f"#### ➡️ O pedido `{str(numero_pedido).strip()}` possui múltiplos itens:\n\n---\n\n"
